@@ -62,7 +62,7 @@ public class EmployeeControllerIntegrationTests {
 	
 	private ObjectMapper om = new ObjectMapper();
 	
-	
+	/*
 	//We want to be sure our database is clear after each test, so lets setup a @BeforeEach method to clear the database
 	@BeforeEach
 	public void resetDatabase() {
@@ -144,5 +144,6 @@ public class EmployeeControllerIntegrationTests {
 		.andExpect(status().isConflict())
 		.andExpect(content().string("Email already registered"));
 	}
+	*/
 
 }
