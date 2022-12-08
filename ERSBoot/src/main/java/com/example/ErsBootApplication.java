@@ -25,6 +25,7 @@ public class ErsBootApplication {
 		SpringApplication.run(ErsBootApplication.class, args);
 	}
 	
+	/*
 	@Bean
 	public CommandLineRunner CommandLineRunnerBean(EmployeeRoleRepository err, TicketStatusRepository tsr, TicketTypeRepository ttr, EmployeeRepository er) {
 		return (args) -> {
@@ -67,5 +68,6 @@ public class ErsBootApplication {
 			}
 		};
 	}
+	*/
 
 }
