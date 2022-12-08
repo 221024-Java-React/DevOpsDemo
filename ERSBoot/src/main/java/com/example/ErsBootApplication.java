@@ -28,7 +28,6 @@ public class ErsBootApplication {
 	@Bean
 	public CommandLineRunner CommandLineRunnerBean(EmployeeRoleRepository err, TicketStatusRepository tsr, TicketTypeRepository ttr, EmployeeRepository er) {
 		return (args) -> {
-			/*
 			List<EmployeeRole> roles = err.findAll();
 			if(roles.isEmpty()) {
 				System.out.println("We need to load our precreated roles into the table");
@@ -66,7 +65,6 @@ public class ErsBootApplication {
 				Employee manager = new Employee(0, eRoles, "Ethan", "McGill", "ethan@email.com", "password", new ArrayList<>(), new ArrayList<>());
 				er.save(manager);
 			}
-			*/
 		};
 	}
 
