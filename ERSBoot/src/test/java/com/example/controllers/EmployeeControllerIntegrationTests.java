@@ -1,5 +1,4 @@
 package com.example.controllers;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -61,7 +60,6 @@ public class EmployeeControllerIntegrationTests {
 	private EmployeeService eServ;
 	
 	private ObjectMapper om = new ObjectMapper();
-	
 	
 	//We want to be sure our database is clear after each test, so lets setup a @BeforeEach method to clear the database
 	@BeforeEach
@@ -144,5 +142,6 @@ public class EmployeeControllerIntegrationTests {
 		.andExpect(status().isConflict())
 		.andExpect(content().string("Email already registered"));
 	}
+	
 
 }
